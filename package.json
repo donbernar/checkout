@@ -1,0 +1,16 @@
+{
+  "name": "checkout",
+  "version": "0.1.0",
+  "description": "A generic checkout made in react ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "checkout",
+    "react",
+    "shopping-cart"
+  ],
+  "author": "@donbernar",
+  "license": "MIT"
+}
