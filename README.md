@@ -14,3 +14,7 @@ docker build -t checkout .
 docker run --name checkout -d -p 8080:80 checkout
 ```
 
+## Dev tools
+```
+if you are using VSCode please install the following extension: stylelint
+```
