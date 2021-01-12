@@ -50,11 +50,11 @@ table {
 /** Layout **/
 
 .layout {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .layout__header {
-  height: 80px;
+  min-height: 100px;
   top: 0px;
   position: fixed;
 }
@@ -109,4 +109,31 @@ table {
     grid-area: footer;
     display: block;
   }
+}
+
+/** Atoms **/
+.subtotal-cta__button {
+  background-color: lightblue;
+  display: inline;
+  width: 100%;
+  max-width: 180px;
+  min-width: 80px;
+}
+
+.header__subtotal > h2 {
+  width: 100%;
+}
+
+/** Molecules **/
+.header__subtotal {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.header__cart-title {
+  display: flex;
+  margin-top: 5px;
 }
