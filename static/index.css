@@ -110,3 +110,64 @@ table {
     display: block;
   }
 }
+
+/** Atoms **/
+
+.title-3 {
+  font-size: 18px;
+}
+
+/** Molecules **/
+
+.cart-items {
+  padding: 8px;
+  background: #FFF;
+}
+
+.cart-items__item {
+  margin-bottom: 8px;
+}
+
+.cart-product {
+  background: #EEEEEE;
+  display: grid;
+  row-gap: 8px;
+  column-gap: 8px;
+  padding: 8px;
+  grid-template-columns: 104px auto min-content;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+    "image title delete"
+    "image description description"
+    "image qty price";
+}
+
+.cart-product__image {
+  grid-area: image;
+  height: 104px;
+  width: 104px;
+  background-color: darkgrey;
+}
+
+.cart-product__title {
+  grid-area: title;
+  font-weight: 600;
+}
+
+.cart-product__delete {
+  grid-area: delete;
+  justify-self: end;
+}
+
+.cart-product__description {
+  grid-area: description;
+}
+
+.cart-product__qty {
+  grid-area: qty;
+}
+
+.cart-product__price {
+  grid-area: price;
+  justify-self: end;
+}
