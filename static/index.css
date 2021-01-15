@@ -124,6 +124,20 @@ table {
   width: 100%;
 }
 
+.cart-info-cta__button {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.cart-info__title {
+  align-self: center;
+  justify-self: auto;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .title-3 {
   font-size: 18px;
 }
@@ -140,6 +154,11 @@ table {
 .header__cart-title {
   display: flex;
   margin-top: 5px;
+}
+
+.header__cart-info {
+  display: flex;
+  margin: 10px;
 }
 
 .cart-items {
