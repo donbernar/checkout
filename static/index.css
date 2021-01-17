@@ -70,8 +70,9 @@ table {
 }
 
 .sidebar {
-  height: 140px;
   width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
   background: #FFF;
 }
 
@@ -131,11 +132,12 @@ table {
 
 .sidebar__line {
   color: black;
-  width: 95%;
+  margin: 0;
+  width: 100%;
 }
 
 .sidebar__title {
-  margin: 10px;
+  padding: 10px 0;
 }
 
 .subtotal__price, .delivery__status {
@@ -239,10 +241,9 @@ table {
 
 .sidebar__subtotal, .sidebar__delivery {
   display: flex;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .sidebar__cta {
   text-align: center;
-  margin: 10px;
 }
