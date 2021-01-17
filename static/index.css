@@ -126,13 +126,13 @@ table {
   width: 100%;
 }
 
-.cart-info-cta__button {
+.top-bar__navigation-icon {
   border: none;
   background-color: transparent;
   font-size: 18px;
 }
 
-.cart-info__title {
+.top-bar__title {
   align-self: center;
   justify-self: auto;
   margin: 0 auto;
@@ -176,12 +176,12 @@ table {
   margin: 10px;
 }
 
-.header__cart-title {
+.top-bar {
   display: flex;
   margin-top: 5px;
 }
 
-.header__cart-info {
+.top-bar {
   display: flex;
   margin: 10px;
 }
