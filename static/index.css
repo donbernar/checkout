@@ -121,12 +121,6 @@ table {
   font-size: 16px;
 }
 
-.top-bar__navigation-icon {
-  border: none;
-  background-color: transparent;
-  font-size: 18px;
-}
-
 .title-3 {
   font-size: 18px;
   font-weight: 600;
@@ -183,6 +177,12 @@ table {
   justify-self: auto;
   margin: 0 auto;
   font-weight: 600;
+}
+
+.top-bar__navigation-icon {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
 }
 
 .cart-items {
