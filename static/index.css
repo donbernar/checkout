@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** Layout **/
+
+.layout {
+  padding-top: 110px;
+}
+
+.layout__header {
+  min-height: 110px;
+  top: 0px;
+  position: fixed;
+}
+
+.header {
+  width: 100%;
+  background: #FFF;
+}
+
+.content {
+  width: 100%;
+  background: #FFF;
+}
+
+.sidebar {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #FFF;
+}
+
+.footer {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .layout {
+    padding-top: 0px;
+    display: grid;
+    grid-template-columns: auto 280px;
+    grid-template-rows: 80px auto 80px;
+    grid-template-areas:
+      "header sidebar"
+      "content sidebar"
+      "footer sidebar";
+  }
+
+  .header {
+    position: relative;
+    grid-area: header;
+  }
+
+  .content {
+    grid-area: content;
+    margin-top: 25px;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    height: auto;
+  }
+
+  .footer {
+    grid-area: footer;
+    display: block;
+  }
+}
+
+/** Atoms **/
+.button {
+  background-color: lightblue;
+  display: inline;
+  width: 100%;
+  font-size: 16px;
+  min-height: 30px;
+}
+
+.title-3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.title-2 {
+  font-size: 20px;
+}
+
+.sidebar__title {
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+}
+
+.subtotal__price, .delivery__status {
+  margin-left: auto;
+}
+
+/** Molecules **/
+.subtotal-cta {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.subtotal-cta__button {
+  max-width: 180px;
+  min-width: 80px;
+}
+
+.subtotal-cta__text {
+  width: 100%;
+}
+
+.top-bar {
+  display: flex;
+  padding: 10px;
+}
+
+.top-bar__title {
+  align-self: center;
+  justify-self: auto;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.top-bar__navigation-icon {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.cart-items {
+  padding: 8px;
+  background: #FFF;
+}
+
+.cart-items__item {
+  margin-bottom: 8px;
+}
+
+.cart-product {
+  background: #EEEEEE;
+  display: grid;
+  row-gap: 8px;
+  column-gap: 8px;
+  padding: 8px;
+  grid-template-columns: 104px auto min-content;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+    "image title delete"
+    "image description description"
+    "image qty price";
+}
+
+.cart-product__image {
+  grid-area: image;
+  height: 104px;
+  width: 104px;
+  background-color: darkgrey;
+}
+
+.cart-product__title {
+  grid-area: title;
+  font-weight: 600;
+}
+
+.cart-product__delete {
+  grid-area: delete;
+  justify-self: end;
+}
+
+.cart-product__description {
+  grid-area: description;
+}
+
+.cart-product__qty {
+  grid-area: qty;
+}
+
+.cart-product__price {
+  grid-area: price;
+  justify-self: end;
+}
+
+.sidebar__subtotal, .sidebar__delivery {
+  display: flex;
+  margin: 10px 0;
+}
