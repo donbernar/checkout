@@ -50,11 +50,11 @@ table {
 /** Layout **/
 
 .layout {
-  padding-top: 100px;
+  padding-top: 110px;
 }
 
 .layout__header {
-  min-height: 100px;
+  min-height: 110px;
   top: 0px;
   position: fixed;
 }
@@ -99,7 +99,7 @@ table {
 
   .content {
     grid-area: content;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .sidebar {
@@ -114,16 +114,11 @@ table {
 }
 
 /** Atoms **/
-.subtotal-cta__button {
+.button {
   background-color: lightblue;
   display: inline;
   width: 100%;
-  max-width: 180px;
-  min-width: 80px;
-}
-
-.header__subtotal > h2 {
-  width: 100%;
+  font-size: 16px;
 }
 
 .top-bar__navigation-icon {
@@ -132,16 +127,9 @@ table {
   font-size: 18px;
 }
 
-.top-bar__title {
-  align-self: center;
-  justify-self: auto;
-  margin: 0 auto;
-  font-size: 18px;
-  font-weight: 600;
-}
-
 .title-3 {
   font-size: 18px;
+  font-weight: 600;
 }
 
 .title-2 {
@@ -168,12 +156,21 @@ table {
 }
 
 /** Molecules **/
-.header__subtotal {
+.subtotal-cta {
   display: flex;
   justify-content: space-evenly;
   border: 1px solid black;
   padding: 10px;
   margin: 10px;
+}
+
+.subtotal-cta__button {
+  max-width: 180px;
+  min-width: 80px;
+}
+
+.subtotal-cta__text {
+  width: 100%;
 }
 
 .top-bar {
@@ -184,6 +181,13 @@ table {
 .top-bar {
   display: flex;
   margin: 10px;
+}
+
+.top-bar__title {
+  align-self: center;
+  justify-self: auto;
+  margin: 0 auto;
+  font-weight: 600;
 }
 
 .cart-items {
